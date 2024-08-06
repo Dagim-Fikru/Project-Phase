@@ -1,4 +1,4 @@
-//how to add title in readme file
+
 # Todo List
 
 This is a simple todo list app that allows you to add, delete and mark tasks as done.
@@ -22,8 +22,10 @@ This is a simple todo list app that allows you to add, delete and mark tasks as 
 2. Open `index.html` in your browser
 
 ## Pages
-
+### Home Page
 ![Home Page](./images/home.png)
+### Add Task
 ![Add Task](./images/addTask.png)
+### Delete Task
 ![Edit Task](./images/editTask.png)
 
