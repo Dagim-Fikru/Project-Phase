@@ -1,7 +1,7 @@
 
 # Todo List
 
-This is a simple todo list app that allows you to add, delete and mark tasks as done.
+This is a simple todo list app that allows you to add, delete and edit tasks.
 
 ## Features
 
