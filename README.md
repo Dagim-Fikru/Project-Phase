@@ -26,6 +26,6 @@ This is a simple todo list app that allows you to add, delete and mark tasks as 
 ![Home Page](./images/home.png)
 ### Add Task
 ![Add Task](./images/addTask.png)
-### Delete Task
+### Edit Task
 ![Edit Task](./images/editTask.png)
 
