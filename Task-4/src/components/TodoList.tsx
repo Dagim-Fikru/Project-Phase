@@ -53,44 +53,42 @@ const TodoList = () => {
             <div>
                 <TodoForm setTodos = {setTodos} />
             </div>
-            {todos.map((todo) => (
-                <div className="items" key={todo.id}>
-                    {editTodoId === todo.id ? (
-                        <div className='editedText'>
-                            <input
-                                type="text"
-                                value={editTodoText}
-                            onChange = {(e) => setEditTodoText(e.target.value)}
-                            autoFocus = {true}
-                            />
-                            <button onClick={() => handleSaveEdit(todo.id)}>
-                                <FaCheck />
-                            </button>
-                            <button className='cancelBtn' onClick={handleCancelEdit}>
-                                <GiCancel />
-                            </button>
-                        </div>
-                    ) : (
-                        <div className="editBtn">
-                            <span>
-                                {todo.text}
-                            </span>
-                            <button onClick={() => handleEdit(todo.id, todo.text)}>
-                                <FaEdit />
-                            </button>
 
-                        </div>
-                    )}
-
-                    <button onClick={() => handleDelete(todo.id)}>
-                        <RiDeleteBin5Fill />
-                    </button>
-
-
-                    
-
-                </div>
-            ))}
+            <div className='todos'>
+                {todos.map((todo) => (
+                    <div className="items" key={todo.id}>
+                        {editTodoId === todo.id ? (
+                            <div className='editText'>
+                                <input
+                                    type="text"
+                                    value={editTodoText}
+                                onChange = {(e) => setEditTodoText(e.target.value)}
+                                autoFocus = {true}
+                                />
+                                <button onClick={() => handleSaveEdit(todo.id)}>
+                                    <FaCheck />
+                                </button>
+                                <button className='cancelBtn' onClick={handleCancelEdit}>
+                                    <GiCancel />
+                                </button>
+                            </div>
+                        ) : (
+                            <div className="editBtn">
+                                <span>
+                                    {todo.text}
+                                </span>
+                                <button onClick={() => handleEdit(todo.id, todo.text)}>
+                                    <FaEdit />
+                                </button>
+                            </div>
+                        )}
+                        <button onClick={() => handleDelete(todo.id)}>
+                            <RiDeleteBin5Fill />
+                        </button>
+                
+                    </div>
+                ))}
+            </div>
         </div>
     )
 }
