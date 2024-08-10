@@ -1,5 +1,5 @@
 {
-  "name": "task-4",
+  "name": "task-5",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -12,11 +12,11 @@
   "dependencies": {
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
-    "react-icons": "^5.2.1",
-    "task-4": "file:"
+    "react-hook-form": "^7.52.2"
   },
   "devDependencies": {
     "@eslint/js": "^9.8.0",
+    "@hookform/devtools": "^4.3.1",
     "@types/react": "^18.3.3",
     "@types/react-dom": "^18.3.0",
     "@vitejs/plugin-react": "^4.3.1",
