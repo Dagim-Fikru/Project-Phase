@@ -2,6 +2,7 @@
 ## Description
 Create a React component for a card resembling the one provided in the figma design. Additionally, you need to populate this card with dummy data and include an avatar image. You also need to create the Job Listing Dashboard.
 
+**The Data is populated from the `job.json` file.**
 ## Technologies
 - Next.js
 - TypeScript
