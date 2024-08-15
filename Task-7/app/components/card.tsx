@@ -1,4 +1,5 @@
-import React from 'react';
+"use client"
+import React, { useEffect, useState } from 'react';
 import Image from 'next/image';
 
 interface Tag {
@@ -16,12 +17,12 @@ interface CardProps {
     tags: Tag[];
 }
 
-const Card: React.FC<CardProps> = ({ title, company, location, description, tags,image }) => {
+const Card: React.FC<CardProps> = ({ title, company, location, description, tags, image }) => {
     return (
         <div className="bg-white shadow-lg rounded-3xl p-6 max-w-4xl mx-auto border border-gray-400 gap-2">
             <div className="flex items-center mb-4">
                 <div>
-                <Image src= {image} alt={title} width={50} height={50} className="rounded-full mr-4" />
+                    <Image src={image} alt={title} width={50} height={50} className="rounded-full mr-4" />
                 </div>
 
                 <div>
