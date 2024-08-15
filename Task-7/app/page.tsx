@@ -11,7 +11,7 @@ export default function Home() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch('https://akil-backend.onrender.com/opportunities/search');
+        const response = await fetch('https://akil-backend.onrender.com/opportunities/searc');
         if (!response.ok) {
           throw new Error('Network response was not ok');
         }
