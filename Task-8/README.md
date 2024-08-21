@@ -1,4 +1,4 @@
-# Task 7
+# Task 8
 ## User Authentication
 ### Description
 Implement authentication functionality using **NextAuth** in your application, including signup and signin pages, and integrate with provided API endpoints for user registration and authentication.
