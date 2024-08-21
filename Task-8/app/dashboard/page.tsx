@@ -3,7 +3,6 @@ import React from 'react';
 import { FaCalendarCheck, FaCheckCircle, FaMapMarkerAlt, FaRegCalendarCheck } from 'react-icons/fa';
 import { RiAddCircleLine } from 'react-icons/ri';
 import { SiFireship } from 'react-icons/si';
-import jobPostings from '../data/jobs.json';
 import { useEffect, useState } from 'react';
 interface Job {
     description: string;

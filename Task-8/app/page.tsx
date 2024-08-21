@@ -2,6 +2,10 @@
 import Link from "next/link";
 import { redirect } from "next/navigation";
 import { useSession } from "next-auth/react";
+import Image from "next/image";
+import { useEffect, useState } from 'react';
+import JobListing from "./components/JobListing";
+
 
 const Page: React.FC = () => {
   const { data: session } = useSession({
@@ -22,25 +26,8 @@ const Page: React.FC = () => {
   }
   return (
     <>
-      <div className="font-sans text-center p-8 bg-gray-50 ">
-        <nav className="flex justify-between items-center p-4 bg-gray-800 text-white shadow-md rounded-lg max-w-fit">
-          <Link
-            href="/api/auth/signout?callbackUrl=/signin"
-            className="text-lg hover:text-blue-300 mx-6"
-          >
-            Logout
-          </Link>
-        </nav>
-        <h1 className="text-gray-800 m-10 text-3xl font-semibold">
-          You're logged in! 🎉
-        </h1>
-        {session && (
-          <p className="text-gray-800 text-lg">
-            Welcome to the app! You're logged in as{" "}
-            <span className="text-blue-500">{session.user.email}</span>.
-          </p>
-        )}
-      </div>
+        <JobListing/>
+      
     </>
   );
 };
